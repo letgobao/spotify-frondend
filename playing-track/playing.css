@@ -1,0 +1,110 @@
+*{
+    font-family: Roboto, sans-serif;
+    margin: 0;
+}
+body{
+   background: #ffffff;
+}
+.playing{
+    position: fixed;
+    display: flex;
+    background: #181818;
+    color: #ffffff;
+    height: 15vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.left{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    font-size: 1em;
+}
+.left img{
+    margin: 0 7%;
+}
+.left .info{
+    margin: 0 2% 0 -2%;
+    max-width: 60%;
+    overflow: hidden;
+}
+.left i{
+    font-size: 1.5em;
+}
+.middle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+}
+.control{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+.middle .control button{
+	border: none;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;	
+    display: flex;
+    margin: 3%;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	outline: none;
+    background: #181818;
+	transition: 0.5s;
+    font-size: 2em;
+    color: #ffffff;
+}
+.middle .duration{
+    position: absolute;
+    bottom:12%;
+    width: 60%;
+}
+input[type="range"]{
+    -webkit-appearance: none;
+	width: 100%;
+	outline: none;
+	height: 2px;
+}
+input[type="range"]::-webkit-slider-thumb{
+	-webkit-appearance: none;
+	height: 15px;
+	width: 15px;
+	background: #FF8A65;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+.right .volume{
+    position: absolute;
+    top:17%;
+    display: flex;
+    font-size: 1.5em;
+}
+.right .volume p{
+    font-size: 1.2em;
+    margin: 0 10% 0 -10%;
+}
+.right .volume i{
+    margin-right: 7%;
+    cursor: pointer;
+}
+.right .volume-control{
+    position: absolute;
+}   
+.bi.bi-check-circle-fill{
+    color: green;
+}
+.bi.bi-heart{
+    transition: 0.5s linear;
+}
